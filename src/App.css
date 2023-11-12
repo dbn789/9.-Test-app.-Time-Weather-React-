@@ -1,38 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    position: relative;
+}
 .App {
-  text-align: center;
+    margin-top: 45vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.navbar__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    text-decoration: none;
+}
+.navbar__link:hover,
+.back:hover {
+    background-color: gray;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.time {
+    margin-top: 45vh;
+    text-align: center;
+}
+.back {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: lightgray;
+    text-decoration: none;
+    margin-bottom: 20vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30vh;
+    width: 35vw;
+    background-color: lightgrey;
+    border-radius: 0 0 0 20px;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,
+button,
+.title,
+select {
+    font-size: 1.3vw;
+}
+.title {
+    margin-right: 5vw;
+}
+input,
+button {
+    margin: 2.2vw 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hidden {
+    display: none;
 }
