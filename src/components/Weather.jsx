@@ -33,10 +33,10 @@ const Weather = () => {
         const upCity = `${firstLetter}${city?.slice(1)}`;
         let url, path;
         if (api === '0') {
-            url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=4bdbac45f3241992fc2b62d1c7b364a1`;
+            url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID={API key}`;
             path = ['main', 'temp'];
         } else {
-            url = `http://api.weatherapi.com/v1/current.json?key=d8047b282f314059b3a101248231211&q=${city}&aqi=no`;
+            url = `http://api.weatherapi.com/v1/current.json?key={API key}&q=${city}&aqi=no`;
             path = ['current', 'temp_c'];
         }
 
